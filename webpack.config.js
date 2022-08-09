@@ -2,12 +2,17 @@ const path = require('path');
 
 module.exports = {
   mode:'development',
-  entry: './src/index.js',
+  entry: {
+    index: './src/index.js',
+    "page-load": './src/page-load.js',
+    "menu-load": './src/menu-load.js',
+    "contact-load": './src/contact-load.js',
+  },
   devServer: {
     static: './dist',
   },
   output: {
-    filename: 'main.js',
+    filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
   }
 };

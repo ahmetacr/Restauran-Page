@@ -1,0 +1,126 @@
+* {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: url('img/cag-kebap.jpg') no-repeat;
+  background-size: 100% 100%;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  color: aliceblue;
+}
+
+.content .header {
+  position: sticky;
+  height: 15vh;
+  top: 0;
+  color: aliceblue;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid green;
+}
+
+.content .header .buttons button{
+  background-color: rgba(0, 0, 0, 0.226);
+  color: aliceblue;
+}
+
+/* HOME PAGE */
+
+.content .home-page {
+  border: 4px solid orange;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin: 4rem;
+}
+
+.content .home-page .info-container {
+  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content .home-page .info-container p {
+  text-align: center;
+  color: aliceblue;
+}
+
+.content .home-page .info-container img{
+  height: 16rem;
+  width: 16rem;
+  border-radius: 100%;
+}
+
+/* MENU PAGE */
+
+.content .menu-page {
+  border: 4px solid orange;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 1rem;
+  margin: 4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.content .menu-page h2{
+  text-align: center;
+  height: fit-content;
+}
+
+.content .menu-page .cards {
+  display: grid;
+  gap: 10px;
+  /* grid-template-columns: repeat(auto-fit,  minmax(250px,1fr)); */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.content .menu-page .cards .card {
+  background-color: rgba(255, 156, 35, 0.628);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content .menu-page .cards .card p {
+  height: fit-content;
+}
+
+.content .menu-page .cards .card img{
+  border-radius: 50%;
+  max-height: 100px;
+  max-width: 100px;
+}
+
+
+
+/* CONTACT PAGE */
+
+.content .contact-page {
+  background-color: rgba(0, 0, 0, 0.6);
+  margin: 4rem;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.content .contact-page p {
+  height: 0.5rem;
+}
+
+.content .contact-page img {
+  height: 40vh;
+  width: 40vw;
+}
+
+
